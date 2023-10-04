@@ -24,4 +24,4 @@ df['reactant_2'] = df['CanonicalizedReaction'].apply(lambda s: s.split('.')[1].s
 df['product'] = df['CanonicalizedReaction'].apply(lambda s: s.split('>>')[1])
 df = df[['reactant_1', 'reactant_2', 'product', 'Yield']]
 print(df)
-df.to_csv('final_df.csv')
+df.to_csv('final_df.csv, index=False')
