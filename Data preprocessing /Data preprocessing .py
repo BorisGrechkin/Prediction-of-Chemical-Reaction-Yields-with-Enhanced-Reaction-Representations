@@ -32,4 +32,5 @@ df2['product'] = df2['CanonicalizedReaction'].apply(lambda s: s.split('>>')[1])
 df2 = df2[['CanonicalizedReaction', 'reactant_1', 'reactant_2', 'product', 'Yield']]
 
 df3 = pd.concat([df1, df2], ignore_index=True)
+df3['reactant_2'] = df3['reactant_2'].replace(0, None)
 df3.to_csv('final_dataset3.csv')
