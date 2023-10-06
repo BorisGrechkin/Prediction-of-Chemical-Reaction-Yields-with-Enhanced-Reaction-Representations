@@ -7,6 +7,9 @@ df = pd.read_csv('D:\dataset.csv', sep = '\t', engine = 'python', usecols = ['Ca
 df.head()
 
 def delete_fuction(line):
+    
+    '''Function for deleting unnecessary condition between > and >'''
+
     first = line.find('>') + 1
     last = line.rfind('>')
     line = line[:first] + line[last:]
