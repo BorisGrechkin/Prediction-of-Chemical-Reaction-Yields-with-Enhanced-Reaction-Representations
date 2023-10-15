@@ -7,5 +7,11 @@ In the last decade, machine learning (ML) proved itself as a powerful tool for o
 3. Data_visualization.ipynb - visualization of data
 4. ML_module.ipynb - file for building, learning and testing ML module
 
+# Code execute
+1. data preprocessing
+2. formulas convertation
+3. split dataset
+4. ML module
 
+If you would like to see some data analytic, run to Data_visualization file
 
