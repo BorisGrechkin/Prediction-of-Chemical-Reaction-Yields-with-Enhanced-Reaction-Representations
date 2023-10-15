@@ -13,5 +13,5 @@ In the last decade, machine learning (ML) proved itself as a powerful tool for o
 3. split dataset
 4. ML module
 
-If you would like to see some data analytic, run to Data_visualization file
+If you would like to see some data analytics, run to Data_visualization file
 
