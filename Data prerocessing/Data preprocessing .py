@@ -17,6 +17,7 @@ def delete_fuction(line):
 
 df['CanonicalizedReaction'] = np.vectorize(delete_fuction)(df['CanonicalizedReaction'])
 
+# create a column where amount of reactants is presented
 df['count_reactant'] = df['CanonicalizedReaction'].apply(lambda s: s.count('.')+1)
 print('number of reactants:')
 print(df['count_reactant'].value_counts())
