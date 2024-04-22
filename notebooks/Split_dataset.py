@@ -17,7 +17,6 @@ def delete_array(line):
 
 def split_lines(line):
     '''Split column for one symbol'''
-    
     if type(line) == float: 
         res.append([None for x in range(100)])
     else:

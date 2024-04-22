@@ -3,6 +3,11 @@ Module for data preprocessing
 '''
 
 import pandas as pd
+import numpy as np
+from rdkit import Chem
+import numpy as np
+from rdkit.Chem import AllChem
+from drfp import DrfpEncoder
 
 class Data_preprocess():
 
@@ -15,7 +20,7 @@ class Data_preprocess():
 
         '''
         Function to find 1 or 2 reactants
-        with product of chemical reaction
+        with the product of chemical reaction
         in USPTO organic reactions
 
         Parameters:
@@ -41,13 +46,13 @@ class Data_preprocess():
 
         df1 = df[df['count_reactant'] == 1]
         split = df1[column].str.split('>>', expand=True)
-        split['reactant2'] = None
-        split = split.rename(columns={0: 'reactant1', 1: 'pruduct'})
+        split['reactant2'] = np.nan
+        split = split.rename(columns={0: 'reactant1', 1: 'product'})
         df1 = df1.join(split)
 
         df2 = df[df['count_reactant'] == 2]
         split = df2[column].str.split('>>', expand=True)
-        split = split.rename(columns={0: 'reactant1', 1: 'pruduct'})
+        split = split.rename(columns={0: 'reactant1', 1: 'product'})
         split2 = split['reactant1'].str.split('.', expand=True)
         split2 = split2.rename(columns={1: 'reactant2'})
         df2 = df2.join([split, split2['reactant2']])
@@ -56,3 +61,70 @@ class Data_preprocess():
         df3.drop('count_reactant', axis=1, inplace=True)
 
         return df3
+
+    @staticmethod
+    def vec(smiles, radius=2, nBits=100):
+        """
+        Converts a SMILES (Simplified Molecular Input Line Entry System)
+        string into a fixed-size vector representation using Morgan fingerprint.
+
+        Parameters:
+        - smiles (str): A SMILES string representing a molecule.
+        - radius (int, optional): The radius parameter for Morgan fingerprint generation. Default is 2.
+        - nBits (int, optional): The number of bits for the fingerprint. Default is 100.
+
+        Returns:
+        - vec (numpy.ndarray or None): If the input SMILES is str
+        and can be converted into a molecular representation,
+        returns a numpy array representing the Morgan fingerprint of the molecule.
+        If the input SMILES is not type of str, returns None.
+
+        Note:
+        The function uses the RDKit library to convert SMILES
+        into a molecular representation and then generates
+        Morgan fingerprints for the molecule.
+        Morgan fingerprints are circular fingerprints that encode molecular
+        structure information up to a certain radius around each atom.
+
+        """
+        if isinstance(smiles, str):
+
+            mol = Chem.MolFromSmiles(smiles)
+            fp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=radius, nBits=nBits)
+            vec = np.array(fp)
+            return vec
+        else:
+            return None
+
+    @staticmethod
+    def encode_reaction(reaction_smiles, n_folded_length=100):
+
+        '''
+        Encodes a reaction SMILES (Simplified Molecular Input Line Entry System)
+        string into a fixed-size vector representation using
+        DRFP (Dense Random Forest Fingerprints) encoding.
+
+        Parameters:
+        - reaction_smiles (str): A reaction SMILES string representing a chemical reaction.
+        - n_folded_length (int, optional): The desired length of the folded DRFP vector. Default is 100.
+
+        Returns:
+        - vec (numpy.ndarray): A numpy array representing the DRFP encoding of the reaction.
+
+        Note:
+        The function utilizes the DrfpEncoder to encode reaction SMILES
+        into a fixed-size vector representation using DRFP encoding.
+        DRFP encoding converts reaction SMILES into dense vectors
+        suitable for machine learning tasks
+
+        '''
+        encoded = DrfpEncoder.encode(reaction_smiles,
+                           n_folded_length=n_folded_length)
+
+        print(type(encoded[0]))
+
+        return encoded[0]
+    @staticmethod
+    def split_array_to_columns(arr):
+        return pd.Series(arr, dtype=int)
+
