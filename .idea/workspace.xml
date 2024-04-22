@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Data_preprocesing.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Split_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/data_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/separate_reactants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Separate_reactants.py" afterDir="false" />
-    </list>
+    <list default="true" id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +167,7 @@
       <workItem from="1713622853906" duration="808000" />
       <workItem from="1713773872355" duration="3316000" />
       <workItem from="1713777339830" duration="2808000" />
-      <workItem from="1713793870545" duration="5742000" />
+      <workItem from="1713793870545" duration="6120000" />
     </task>
     <servers />
   </component>
@@ -185,7 +176,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Prediction_of_Chemical_Reaction_Yields_with_Enhanced_Reaction_Representations$Encode_formulas.coverage" NAME="Encode formulas Coverage Results" MODIFIED="1713796504259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Data" />
-    <SUITE FILE_PATH="coverage/Prediction_of_Chemical_Reaction_Yields_with_Enhanced_Reaction_Representations$Encode_formulas__1_.coverage" NAME="Encode_formulas (1) Coverage Results" MODIFIED="1713799232246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Data" />
+    <SUITE FILE_PATH="coverage/Prediction_of_Chemical_Reaction_Yields_with_Enhanced_Reaction_Representations$Encode_formulas__1_.coverage" NAME="Encode_formulas (1) Coverage Results" MODIFIED="1713799880826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Data" />
     <SUITE FILE_PATH="coverage/Prediction_of_Chemical_Reaction_Yields_with_Enhanced_Reaction_Representations$Split_encoded_formulas.coverage" NAME="Split_encoded_formulas Coverage Results" MODIFIED="1713798641445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Data" />
     <SUITE FILE_PATH="coverage/Prediction_of_Chemical_Reaction_Yields_with_Enhanced_Reaction_Representations$Separate_reactants.coverage" NAME="Separate_reactants Coverage Results" MODIFIED="1713794506724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Data" />
   </component>

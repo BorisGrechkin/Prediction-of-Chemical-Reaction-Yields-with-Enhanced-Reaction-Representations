@@ -126,5 +126,16 @@ class Data_preprocess():
         return encoded[0]
     @staticmethod
     def split_array_to_columns(arr):
+
+        '''
+        Splits a NumPy array into separate columns of a pandas DataFrame.
+
+        Parameters:
+        - arr (numpy.ndarray): The NumPy array to split into columns.
+
+        Returns:
+        - pandas.Series: A Series containing the elements of the input array.
+        '''
+
         return pd.Series(arr, dtype=int)
 
