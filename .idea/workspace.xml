@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="" />
+    <list default="true" id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/ML_module.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/ML_module.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Encode_formulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Encode_formulas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Separate_reactants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Separate_reactants.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -167,7 +173,7 @@
       <workItem from="1713622853906" duration="808000" />
       <workItem from="1713773872355" duration="3316000" />
       <workItem from="1713777339830" duration="2808000" />
-      <workItem from="1713793870545" duration="6120000" />
+      <workItem from="1713793870545" duration="7262000" />
     </task>
     <servers />
   </component>
