@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-from scripts.data_preprocess import Data_preprocess
+from Scripts.data_preprocess import Data_preprocess
 
 os.chdir('../../')
 
