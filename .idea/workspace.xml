@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Data prerocessing/Data preprocessing .py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data prerocessing/Formulas convertation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data prerocessing/Split_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/US_patents_1976-Sep2016_1product_reactions_yield_ok_cropped_data_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/result.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_visualization.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_module.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2fMtcIt5iCo71xOOBWHDfoUw6Dr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "//wsl$/Ubuntu-22.04/home/boris/Prediction-of-Chemical-Reaction-Yields-with-Enhanced-Reaction-Representations1.1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-22.04\home\boris\Prediction-of-Chemical-Reaction-Yields-with-Enhanced-Reaction-Representations" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3663208-fb9f-4557-9ad6-e8e4f68991c0" name="Changes" comment="" />
+      <created>1713622852701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713622852701</updated>
+      <workItem from="1713622853906" duration="808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
