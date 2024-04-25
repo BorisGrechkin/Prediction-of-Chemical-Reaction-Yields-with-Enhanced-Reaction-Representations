@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  data_prepare1:
+    cmd: python3 src/Data/Separate_reactants.py
+    deps:
+    - path: src/Data/Separate_reactants.py
+      hash: md5
+      md5: 3b2a2bc21a305eb6a12166d02d5ecc2c
+      size: 412
+    outs:
+    - path: Data/separated_reactants.csv
+      hash: md5
+      md5: f73e0f9267cbc55976b1760935e7c35d
+      size: 5404280
+  data_prepare2:
+    cmd: python3 src/Data/Encode_formulas.py
+    deps:
+    - path: src/Data/Encode_formulas.py
+      hash: md5
+      md5: 49d8771fa7b3ceb7b34414ce65c77ad8
+      size: 1022
+    outs:
+    - path: Data/prepeared_dataset.csv
+      hash: md5
+      md5: 059537715f818b8f5e7bbad30d45def1
+      size: 17832931
+  training:
+    cmd: python3 src/models/Prediction_model.py
+    deps:
+    - path: src/models/Prediction_model.py
+      hash: md5
+      md5: f332c191836856d36a56c1d842e5533e
+      size: 1820
+    outs:
+    - path: Models/model.pickle
+      hash: md5
+      md5: 6c4b1dcd1aa2fd3fc9ad6db6f64f95fd
+      size: 499779

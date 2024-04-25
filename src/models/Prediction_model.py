@@ -8,12 +8,14 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 from yaml import load, Loader
+from dvclive import Live
+import pickle
 
 os.chdir('../../')
 
 if __name__ == "__main__":
 
-    df = pd.read_csv('Data\prepeared_dataset.csv')
+    df = pd.read_csv("Data/prepeared_dataset.csv")
 
     target = df[df.columns[-1]].values
     data = df[df.columns[:-1]].values
@@ -44,9 +46,12 @@ if __name__ == "__main__":
     plt.ylabel("Y Predicted")
     plt.savefig('Vizualization/result.jpg')
 
+    with open("Models/model.pickle", "wb") as mod:
+        mod.write(pickle.dumps(xgb_model))
 
-    #with Live(save_dvc_exp=True) as live:
-        #live.log_params(train_config)
-        #live.log_artifact("%s/linear_model.pickle" % os.environ.get("MODELS_PATH"))
-        #live.log_metric("train_R2", R2)
-        #live.log_metric("test_RMSE", RMSE)
+    with Live(save_dvc_exp=True) as live:
+        live.log_params(train_config)
+        live.log_artifact("Models/model.pickle")
+        live.log_artifact("Vizualization/result.jpg")
+        live.log_metric("train_R2", R2)
+        live.log_metric("test_RMSE", RMSE)

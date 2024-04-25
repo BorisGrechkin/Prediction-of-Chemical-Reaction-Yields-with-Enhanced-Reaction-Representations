@@ -2,14 +2,14 @@ import os
 
 import pandas as pd
 
-from Scripts.data_preprocess import Data_preprocess
+from scripts.data_preprocess import Data_preprocess
 
 os.chdir('../../')
 
 if __name__ == "__main__":
 
-    df = pd.read_csv('Data\dataset.csv', sep = '\t',
-                     engine = 'python', usecols = ['CanonicalizedReaction', 'Yield'])
+    df = pd.read_csv('Data\dataset.csv', sep='\t',
+                     engine='python', usecols=['CanonicalizedReaction', 'Yield'])
 
     res = Data_preprocess.find_reactants(df, 'CanonicalizedReaction')
 
