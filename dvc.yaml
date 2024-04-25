@@ -1,0 +1,26 @@
+stages:
+  data_prepare1:
+    cmd: python3 src/Data/Separate_reactants.py
+    deps:
+    - src/Data/Separate_reactants.py
+    outs:
+    - Data/separated_reactants.csv
+  data_prepare2:
+    cmd: python3 src/Data/Encode_formulas.py
+    deps:
+    - src/Data/Encode_formulas.py
+    outs:
+    - Data/prepeared_dataset.csv
+  training:
+    cmd: python3 src/models/Prediction_model.py
+    deps:
+    - src/models/Prediction_model.py
+    outs:
+    - Models/model.pickle
+params:
+- dvclive/params.yaml
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
